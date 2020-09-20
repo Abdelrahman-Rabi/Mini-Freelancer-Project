@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+
+
+    <title>Practice</title>
+    
+</head>
+<body> 
+
+    <!-- page 1  -->
+
+    <div id="page1">
+        <button id='freelancer'> Freelancer </button> <br/>
+        <button id='looking-for-freelancer'> Looking For Freelancer</button>
+    </div>
+
+    <!-- page 2 -->
+
+    <div id="page2" class="hide">
+        <form>
+            <!-- input name -->
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname"><br>
+            <!-- input country -->
+            <label for="country">country</label>
+            <select name="country" id="country">Country
+                <option value="Jordan" selected>Jordan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Jordan">Jordan</option>
+            </select>
+            <br>
+            <!-- input profile image -->
+            <label for="pImage">Profile Image</label>
+            <input type="file" name="pImage" id="pImage" accept="image/*">
+            <hr>
+            <!-- input Lang -->
+            <label for="nLang">Native Language</label>
+            <select name="nLang" id="nLang">Native Language
+                <option value="Arabic" selected>Arabic</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+            </select>
+            <br>
+            <!-- input Other Lang -->
+            <label for="oLang">Other Languages</label>
+            <select name="oLang" id="oLang">Other Languages
+                <option value="Arabic" selected>Arabic</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+                <option value="English">English</option>
+            </select>
+            <select name="level" id="level">Level
+                <option value="beginner" selected>beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+            </select>
+            <button id="btn_add_Lang">Add Language</button>
+            <!-- add Langs  -->
+            <div id="langsContainer">
+            </div>
+            <hr>
+            <!-- input Skills -->
+            <div class="container">
+                    <div>
+                        <h3>Skilles</h3>
+                    </div>
+                    <!-- main Skill -->
+                    <div class="skill">
+                        <select name="skill" id="skill" onchange="subMinu()">
+                        <option >Select Skill</option>
+                        <option value="developer">developer</option>
+                        <option value="design">Design</option>
+                        <option value="writer">writing</option>
+                        </select>
+                    </div>
+                    <!-- sub Skill -->
+                    <div>
+                        <select name="sub_Menu" id="sub_Menu">
+                        </select>
+                    </div>
+                    <!-- level -->
+                    <div>
+                        <input type="radio" id="beginner" name="level" value="beginner">
+                        <label for="beginner">Beginner</label><br>
+                        <input type="radio" id="intermediate" name="level" value="intermediate">
+                        <label for="intermediate">Intermediate</label><br>
+                        <input type="radio" id="advanced" name="level" value="advanced">
+                        <label for="advanced">Advanced</label>
+                    </div>
+                    <!-- input submit skill -->
+                    <div>
+                        <button id="btn_skill">Add Skill</button>
+                        <!-- add skills  -->
+                        <div id="skillsContainer">
+                        </div>
+                    </div>
+            </div>
+            <div>
+            <!-- input payment -->
+            <p>accept payment menthod</p>
+            <input type="checkbox" id="paypal" name="paypal" value="paypal">
+            <label for="paypal"> paypal</label><br>
+            <input type="checkbox" id="wire_transfer" name="wire_transfer" value="wire_transfer">
+            <label for="wire_transfer"> wire Transfer</label><br>
+            <input type="checkbox" id="western_union" name="western_union" value="western_union">
+            <label for="western_union"> western Union</label><br> 
+            </div>
+            <!-- submit button -->
+            <button id="save-profile">Save Profile</button>        
+        </form>
+    </div>
+    <!-- page 3 -->
+    <div id="page3" class="hide">
+        <div id="profiles-container">
+
+        </div>
+    </div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
